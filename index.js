@@ -100,7 +100,7 @@ function removeFromCart(item) {
         for (let i = 0; i < getCart().length; i++){
           if (Object.keys(getCart()[i]) === item) {
             //if (cart[i].hasOwnProperty(item)){
-              getCart().splice(i,1)
+              cart = getCart().splice(i,1)
               return cart
 
             //}
