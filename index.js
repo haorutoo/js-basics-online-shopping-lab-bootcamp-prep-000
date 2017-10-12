@@ -98,7 +98,7 @@ function removeFromCart(item) {
   }
   else {
         for (let i = 0; i < getCart().length; i++){
-          if (Object.keys(getCart()[i]) == item) {
+          if (Object.keys(getCart()[i]).toString() == item) {
             //if (cart[i].hasOwnProperty(item)){
               cart = getCart().splice(i,1)
               return cart
